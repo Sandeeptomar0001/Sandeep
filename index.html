@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		* 
+		{
+			margin: 0px;
+			padding: 0px;
+		}
+		.menu
+		{
+			background-color: grey;
+			height: 100px;
+			width: 100%;
+		}
+				
+		.menu ul 
+		{
+			list-style: none;
+
+			
+		}
+		 .menu ul li
+		{
+			background: darkblue;
+			width: 120px;
+			height: 35px;
+			border: 1px solid white;
+			float: left;
+			text-align: center;
+			line-height: 35px;
+			border-radius: 10px;
+			position: relative;
+		}
+		.menu ul li a 
+		{
+			color: white;
+			text-decoration: none;
+		}
+		.menu ul li:hover
+		{
+			background: darkred;
+		}
+		.menu ul ul  
+		{
+			display: none;
+		}
+		.menu ul li:hover>ul
+		{
+			display: block;
+		}
+		.menu ul ul ul 
+		{
+			margin-left: 120px;
+			margin-top: -15px;
+		}
+	</style>
+</head>
+<body>
+	<div class="menu">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About Us</a>
+       
+			</li>
+			<li><a href="#">Courses</a>
+				<ul>
+					<li><a href="#">B.Tech</a>
+						<ul>
+							<li><a href="#">CSE</a></li>
+							<li><a href="#">EC</a></li>
+							<li><a href="#">EE</a></li>
+							<li><a href="#">CE</a></li>
+							<li><a href="#">ME</a></li>
+							<li><a href="#">IT</a></li>
+						</ul>
+					</li>
+					<li><a href="#">M.Tech</a></li>
+					<li><a href="#">B.Sc</a></li>
+					<li><a href="#">M.Sc</a></li>
+					<li><a href="#">B.COM</a></li>
+				</ul>
+			</li>
+			<li><a href="#">News</a></li>
+			<li><a href="#">Contact Us</a></li>
+		</ul>
+	</div>
+	
+</body>
+</html>
